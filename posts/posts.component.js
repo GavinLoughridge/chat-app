@@ -7,10 +7,14 @@
       templateUrl: '/posts/posts.html'
     })
 
-  function controller($firebaseArray, $firebaseAuth) {
+  function controller($firebaseArray, $firebaseAuth, $window) {
     const vm = this
 
     vm.$onInit = function () {
+
+      var container = angular.element( document.querySelector( '.container' ) );
+      container.css('height', $window.innerHeight);
+
       vm.selectedPost = '😀'
       var auth = $firebaseAuth()
 

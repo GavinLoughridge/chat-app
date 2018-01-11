@@ -1,15 +1,16 @@
 .container {
-  max-width: 400px;
-  min-width: 300px;
-  height: 100vh;
+  width: 100%;
   background-color: #254441;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-top: 4em;
+  border-bottom: 4em;
+  font-size: 200%;
 }
 
 .posts {
-  height: calc(100vh - 50px);
+  height: 80%;
   overflow: scroll;
   background-color: #43AA8B;
 }
@@ -17,19 +18,24 @@
 .post {
   border-bottom: #215545 1px solid;
   border-top: #90d3bf 1px solid;
+  height: 2em;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .newPost {
   display: flex;
+  height: 20%;
   justify-content: center;
   align-items: center;
   margin: 0;
 }
 
 .newPost select {
-  max-width: 84px;
+  max-width: 6em;
+  height: 1.25em;
+  font-size: 100% !important;
 }
 
 .views {
@@ -42,6 +48,10 @@
 
 .newPost div {
   margin: 0;
+}
+
+.btn {
+  font-size: 70% !important;
 }
 
 .btn-sample {
